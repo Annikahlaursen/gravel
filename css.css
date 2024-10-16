@@ -1,0 +1,358 @@
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "superclarendon", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+:root {
+    --sort: #1D1D1B;
+    --hvid: #fff;
+    --blå: #263570;
+    --brun: #6C4D30;
+    --beige: #EAD98F;
+    --mørkgrøn: #616E43;
+    --lysgrøn: #97A068;
+    --grå: #3e3e3e;
+}
+
+/* her starter link-justeringer */
+
+a:link {
+    color: var(--hvid);
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+a:visited {
+    color: var(--hvid);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+a:hover {
+    color: var(--grå);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+a:active {
+    color: var(--grå);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    text-decoration: none;
+    max-height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#headlogo {
+    position: absolute;
+    top: 18px;
+    left: 60px;
+    width: auto;
+}
+
+/* søgefelt */
+
+input[type=text] {
+    position: absolute;
+    background: var(--hvid);
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    top: 10px;
+    right: 40px;
+  }
+  
+/* hvor meget søgefeltet skal ændre sig, når den er i brug */
+
+  input[type=text]:focus {
+    width: auto;
+  }
+
+/* menu i header */
+
+header {
+    position:fixed;
+    display:flex;
+    top:0;
+    left:0;
+    right:0;
+    background: var(--sort);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    padding: 30px 7%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1000;
+}
+
+header .menu {
+    font-weight: bolder;
+    font-size: 15px;
+    color: var(--hvid);
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    text-decoration-line: underline;
+    text-decoration-color: var(--hvid);
+    position: relative;
+    float: left;
+    right: 10px;
+}
+
+header .navbar ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    padding: 15px;
+    color: var(--hvid);
+    display: block;
+}
+
+header .navbar ul li a:hover {
+    background: var(--grå);
+    color: var(--hvid);
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    padding: 20px;
+    width: auto;
+    background: var(--sort);
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    /*border-top: 1px solid var(--sort);*/
+}
+
+header .navbar ul li ul li ul {
+    left: 100px;
+    top:0;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+    display: block;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 15px;
+    color: var(--grå);
+    cursor: pointer;
+    display: none;
+}
+
+main {
+    top: 0vh;
+}
+
+
+.foto {
+    width: 100%;
+    height: auto;
+}
+
+.nyhed {
+    height: 700px;
+    width: 100%;
+    background-image: url("img/nyhed.png");
+}
+
+#knap1 {
+    position: relative;
+    top: 500px;
+    width: 150px;
+    left: 590px;
+    text-decoration-style: none;
+    text-align: center;
+    color: #fff;
+    background-color: var(--lysgrøn);
+    font-size: 15px;
+    padding: 10px;
+}
+
+#knap2 {
+    position: relative;
+    top: 1300px;
+    width: 150px;
+    left: 960px;
+    text-decoration-style: none;
+    text-align: center;
+    color: #fff;
+    background-color: var(--blå);
+    font-size: 15px;
+    padding: 10px;
+}
+
+#knap3 {
+    position: relative;
+    top: 1850px;
+    width: 150px;
+    left: 250px;
+    text-decoration-style: none;
+    text-align: center;
+    color: #fff;
+    background-color: var(--brun);
+    font-size: 15px;
+    padding: 10px;
+}
+
+
+.info {
+    height: 700px;
+    width: 100%;
+    background-image: url("img/stel.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.deltur {
+    height: 700px;
+    width: 100%;
+    background-image: url("img/biker.jpg");
+    background-size: cover;
+}
+
+.roed1 {
+    position: relative;
+    top: 240px;
+    width: 200px;
+    height: 33vh;
+    left: 420px;
+    text-align: center;
+    color: #fff;
+    font-size: 100px;
+}
+
+.roed2 {
+    position: relative;
+    top: 425px;
+    width: 700px;
+    height: 33vh;
+    left: 700px;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+.roed3 {
+    position: relative;
+    top: 240px;
+    width: 400px;
+    height: 33vh;
+    left: 127px;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+.nyhed1 {
+    position: relative;
+    top: 240px;
+    width: 500px;
+    height: 33vh;
+    left: 60px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    text-align: left;
+}
+
+.nyhedtext1 {
+    position: relative;
+    display: flex;
+    top: 350px;
+    width: 500px;
+    height: 33vh;
+    left: 60px;
+    text-align: left;
+    color: #fff;
+    font-size: 12px;
+    background-color: #263570;
+    padding: 20px;
+}
+
+.nyhed2 {
+    position: relative;
+    top: 580px;
+    width: 400px;
+    height: 33vh;
+    left: 960px;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+.nyhedtext2 {
+    position: relative;
+    display: flex;
+    top: 400px;
+    width: 500px;
+    height: 33vh;
+    left: 800px;
+    text-align: left;
+    color: #fff;
+    font-size: 12px;
+    background-color: #263570;
+    padding: 20px;
+}
+
+.baggrund1 {
+    height: 700px;
+    width: 100%;
+    background-image: url("img/rat.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.baggrund2 {
+    height: 700px;
+    width: 100%;
+    background-image: url("img/gear.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+footer {
+    display: flex;
+    align-content: flex-end;
+    width: 100%;
+    background-color: var(--sort);
+    color: var(--hvid);
+    padding: 35px;
+    justify-content: space-between;
+    font-size: 13px;
+    flex-wrap: wrap-reverse;
+    text-transform: none;
+  }
+
+footer ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.newh1, .newh2 {
+    margin: 0px;
+    padding: 0px;
+}
