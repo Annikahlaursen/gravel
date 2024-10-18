@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gravel</title>
+    <link rel="icon" type="image/x-icon" href="img/hjul.png">
+    <link rel="stylesheet" href="https://use.typekit.net/tql5zdt.css"> 
     <link rel="stylesheet" href="css.css">
-    <link rel="stylesheet" href="https://use.typekit.net/tql5zdt.css">  
+    
+    <!-- eksperiment med per
+    <link rel="stylesheet" href="roderi.css" --> 
 </head>
 
 <body>
@@ -17,39 +21,44 @@
         <input type="checkbox" id="menu-bar">
         <label for="menu-bar">Menu</label>
 
-        <a href="index.html"><img src="/img/Aktiv 8.png" id="headlogo" alt="logo"></a>
+        <a href="index.html">
+            <img src="/img/logo.png" id="headlogo" alt="logo">
+        </a>
 
         <nav class="navbar">
             <ul>
                 <li><a href="#">Arrangement</a>
-                        <ul>
-                            <li><a href="#">Cykel løb</a></li>
-                            <li><a href="#">Tilmelding</a></li>
-                    </li>
-                        </ul>
-                    
-                                <li><a href="#">Anbefaling</a>
-                                    <ul>
-                                        <li><a href="#">Ruter</a></li>
-                                        <li><a href="#">Udstyr</a></li>
-                                </li>
-                                    </ul>
-                        <li><a href="#">Informaiton</a>
-                            <ul>
-                                            <li><a href="/info.html">Om gravel</a></li>
-                                        <li><a href="#">Guide</a></li>
-                                    <li><a href="#">Kort</a></li>
-                                <li><a href="#">Terræn</a></li>
-                        </li>
-                            </ul>
-                                <li><a href="#">Fællesskab</a>
-                                    <ul>
-                                        <li><a href="#">Forum</a></li>
-                                        <li><a href="#">Blog</a></li>
-                                            <li><a href="/deltur.html">Del tur</a></li>
-                            </li>
-                                    </ul>
-                                        <li><a href="/nyhed.html">Nyheder</a></li>
+                    <ul>
+                        <li><a href="#">Cykel løb</a></li>
+                        <li><a href="#">Tilmelding</a></li>
+                    </ul>
+                </li>
+                        
+                <li><a href="#">Anbefaling</a>
+                    <ul>
+                        <li><a href="#">Ruter</a></li>
+                        <li><a href="#">Udstyr</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Informaiton</a>
+                    <ul>
+                        <li><a href="/info.html">Om gravel*</a></li>
+                        <li><a href="#">Guide</a></li>
+                        <li><a href="#">Kort</a></li>
+                        <li><a href="#">Terræn</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Fællesskab</a>
+                    <ul>
+                        <li><a href="#">Forum</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="/deltur.html">Del tur*</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="/nyhed.html">Nyheder*</a></li>
 
             </ul>
 
@@ -60,33 +69,120 @@
     <main>
         <div class="container">
             <div class="indhold">
-                <img src="/img/nyhed.png" alt="rytter" width="1440px" height="auto">
-            </div>
-                <div class="baggrund">
-                    <img src="/img/grøn.png" alt="grøn" width="1440px" height="960px">
-                        <img src="/img/lysgrøn.png" alt="lysgrøn" width="1440px" height="945px">
+                <aside class="kongen">
+                    <div class="vindervm">
+                        <div id="øverstekst">
+                        <h1>Kongen af CX og landevej bliver kongen af gravel</h1><br>
+                        <h2>08/10-2024</h2><br>
+                        <p>Efter at have vundet seks verdensmesterskaber som cykelcrossrytter og ét som landevejsrytter, var det kun et spørgsmål om tid, før Mathieu Van der Poel også iførte sig en UCI Gravel verdensmestertrøje.<br>
+                            Selvom det (desværre) er usandsynligt, at vi ser ham som fuldtids gravelrytter i den nærmeste fremtid, var det imponerende at se hans dominerende præstation ved det nyligt afholdte verdensmesterskab.<br>
+                            Canyon har sendt os detaljerne om MVDP's racevindende Grail CFR, som vi tænkte, vi ville dele med dig.</p>
+                        </div>
+                </aside>
+
+                <!-- Jeg har grundet tidspres undladet at lave en slide funktion i containeren "kongen", 
+                 men hvis jeg skulle have gjort det færdig, skulle jeg have benyttet mig af dette kodning:
+                
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                            <img src="img/biker.jpg" style="width:100%">
+                        <div class="text">Caption Text</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                            <img src="img/display.png" style="width:100%">
+                        <div class="text">Caption Two</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                            <img src="img/rat.png" style="width:100%">
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
                 </div>
+            <br>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+-->
+
+                <aside class="nederst">
+                    <div class="hollansk">
+                        <div>
+                        <img src="img/vinder.png" alt="vmvinder" id="vinder">
+                            <h1>Hollansk sejr i VM</h1><br>
+                            <h2>06/10-2024</h2><br>
+                            <p>I kvindernes løb sikrede hollandske Marianne Vos sin 14. verdensmesterskabstitel efter en spændende spurt mod Belgiens Lotte Kopecky.
+                            Vos viste sin taktiske dygtighed og cementerede sin position som en af de største cykelryttere i historien.</p>
+                        </div>
+                    </div>
+                    <div class="display">
+                        <img src="img/display.png" alt="cykeldisplay" id="display">
+                    </div>
+                </aside>
+            </div>
         </div>
-
-        <a class="button" href="nyhed.html">HTML button tag</a>
-
     </main>
     
 <footer>
-    <li>
-        <p>Oplysninger</p><br>
-            <p>Udarbejdet af: Annika Hecto Laursen</p><br>
-            <p>Tlf.:<a href="+45 30 50 23 69">+45 30 50 23 69</a></p><br>
-            <p>Mail:<a href="mail">Annikahlaursen@gmail.com</a></p><br>
-    </li>
-    <li>
-        <p>Kontakt for muligt samarbejde</p><br>
-        <p>Træffe tidspunkt:</p><br>
-        <p>Hverdage: Kl. 14.00-15.00</p><br>
-    </li>
+
+    <section>
+    <ul>
+        <li>Oplysninger</li><br>
+        <li>Udarbejdet af: Annika Hecto Laursen</li><br>
+        <li>Tlf.:<a href="+4530502369">+45 30 50 23 69</a></li><br>
+        <li>Mail:<a href="mail">Annikahlaursen@gmail.com</a></li><br>
+    </ul>
+    </section>
+
+    <section>
+    <ul>
+        <li>Kontakt for muligt samarbejde</li><br>
+        <li>Træffe tidspunkt:</li><br>
+        <li>Hverdage: Kl. 14.00-15.00</li><br>
+    </ul>
+    </section>
+
 </footer>
 
 </body>
-
-
 </html>
